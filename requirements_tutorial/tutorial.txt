@@ -1,0 +1,22 @@
+1. Pastikan berada di folder project
+   D:\Rap_Gemastik
+
+2. Aktifkan virtual environment
+   .\.venv\Scripts\activate
+   (kalau error policy → jalankan:
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass)
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+python -m venv .venv
+
+# 2. Buat environment
+python -m venv .venv
+.venv\Scripts\activate   # (Windows)
+
+# 3. Instal Jupyter
+pip install jupyter
+
+# 4. Jalankan Jupyter
+jupyter notebook
+
+.\setup_vit_kernel.bat .\setup_vision_ai_optimized.bat

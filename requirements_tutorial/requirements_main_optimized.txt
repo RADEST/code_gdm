@@ -1,0 +1,17 @@
+torch
+torchvision
+torchaudio
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+datasets
+transformers==4.44.2
+tabulate
+tqdm
+pillow
+huggingface_hub
+ipykernel
+accelerate
+safetensors
