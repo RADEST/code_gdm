@@ -52,6 +52,7 @@ echo 📦 Membuat file requirements_main_optimized.txt (library utama)...
 
 echo.
 echo 🚀 Menginstal library dari requirements_main_optimized.txt ...
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 --upgrade
 pip install --upgrade pip
 pip install -r requirements_main_optimized.txt --index-url https://download.pytorch.org/whl/cu121 --extra-index-url https://pypi.org/simple
 
