@@ -1,9 +1,9 @@
 @echo off
-title 🚀 Setup Vision-AI (Optimized for RTX 3050 8GB + i7 Gen 12)
+title 🚀 Setup RAP-AI (Optimized for RTX 3050 8GB + i7 Gen 12)
 echo ===============================================================
 echo  ⚙️  Instalasi Miniconda (jika belum ada)
-echo  🧠  Membuat Environment: vision-ai
-echo  🧩  Kernel Name: Python (Vision-AI Optimized)
+echo  🧠  Membuat Environment: rap-ai
+echo  🧩  Kernel Name: Python (RAP-AI Optimized)
 echo  ⚡  GPU: RTX 3050 (8GB VRAM) - CUDA 12.1
 echo ===============================================================
 echo.
@@ -21,12 +21,12 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo 🧠 Membuat environment vision-ai...
-call conda create -n vision-ai python=3.10 -y
+echo 🧠 Membuat environment rap-ai...
+call conda create -n rap-ai python=3.10 -y
 
 echo.
-echo 🔄 Mengaktifkan environment vision-ai...
-call conda activate vision-ai
+echo 🔄 Mengaktifkan environment rap-ai...
+call conda activate rap-ai
 
 echo.
 echo 📦 Membuat file requirements_main_optimized.txt (library utama)...
@@ -57,7 +57,7 @@ pip install -r requirements_main_optimized.txt --index-url https://download.pyto
 
 echo.
 echo 🧩 Mendaftarkan kernel untuk VSCode / Jupyter...
-python -m ipykernel install --user --name=vision-ai --display-name "Python (Vision-AI Optimized)"
+python -m ipykernel install --user --name=rap-ai --display-name "Python (RAP-AI Optimized)"
 
 echo.
 echo 🗂️  Membuat folder penyimpanan model lokal...
@@ -83,8 +83,8 @@ pip freeze > requirements_full_optimized.txt
 echo.
 echo ✅ Environment dan model telah siap untuk RTX 3050 (8GB)!
 echo ===============================================================
-echo  🔹 Environment : vision-ai
-echo  🔹 Kernel Name : Python (Vision-AI Optimized)
+echo  🔹 Environment : rap-ai
+echo  🔹 Kernel Name : Python (RAP-AI Optimized)
 echo  🔹 Folder Model : models/
 echo  🔹 File Library : requirements_main_optimized.txt
 echo  🔹 File Backup  : requirements_full_optimized.txt

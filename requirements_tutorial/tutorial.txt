@@ -19,4 +19,9 @@ pip install jupyter
 # 4. Jalankan Jupyter
 jupyter notebook
 
-.\setup_vit_kernel.bat .\setup_vision_ai_optimized.bat
+.\setup_vit_kernel.bat .\setup_rap_ai.bat .\setup_final.bat
+
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/msys2
+
